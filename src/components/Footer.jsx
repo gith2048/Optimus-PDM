@@ -38,7 +38,7 @@ const Footer = () => {
           <h3 className="text-xl font-bold mb-2">Contact Us</h3>
           <p className="flex items-start space-x-2 mb-2">
             <i className="fas fa-map-marker-alt mt-1"></i>
-            <span>TOCE Bangalore</span>
+            <span>TOCE</span>
           </p>
           <p className="flex items-center space-x-2 mb-2">
             <i className="fas fa-phone"></i>
