@@ -97,24 +97,7 @@ const About = () => {
         />
       </section>
 
-      {/* Team */}
-      <section className="py-16 px-4 max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Leadership Team</h2>
-        <p className="text-gray-600 mb-12">Meet the experts behind PredictMaintain's innovative solutions.</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          {team.map((member, i) => (
-            <motion.div key={i} className="bg-white p-4 rounded-lg shadow text-center"
-              initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-              transition={{ delay: i * 0.2 }}
-            >
-              <img src={member.image} alt={member.name} className="w-32 h-32 mx-auto rounded-full object-cover mb-4"/>
-              <h3 className="font-bold text-xl">{member.name}</h3>
-              <p className="text-gray-500 mb-2">{member.role}</p>
-              <p className="text-gray-600 text-sm">{member.bio}</p>
-            </motion.div>
-          ))}
-        </div>
-      </section>
+      
 
 {/* Our Approach */}
 <section className="py-20 px-4 bg-gray-50">
@@ -147,35 +130,7 @@ const About = () => {
 
 
 
-   {/* Certifications */}
-<section className="py-20 px-4 bg-gray-50">
-  <div className="max-w-6xl mx-auto text-center">
-    <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-gray-800">
-      Our Certifications
-    </h2>
-    <p className="text-gray-600 text-lg md:text-xl mb-16">
-      We maintain the highest standards in quality, safety, and security to ensure reliable solutions.
-    </p>
-
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 items-center">
-      {certifications.map((c, i) => (
-        <motion.div
-          key={i}
-          className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: i * 0.15 }}
-        >
-          <img src={c.image} alt={c.title} className="h-20 w-auto mb-4 object-contain" />
-          <h3 className="text-lg font-semibold text-gray-800 mb-1">{c.title}</h3>
-          <p className="text-gray-500 text-sm">{c.desc}</p>
-        </motion.div>
-      ))}
-    </div>
-  </div>
-</section>
-
+  
 
       {/* CTA */}
       <section className="py-16 px-4 bg-blue-600 text-white text-center">

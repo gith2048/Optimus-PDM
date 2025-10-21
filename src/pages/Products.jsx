@@ -88,10 +88,10 @@ const Products = () => {
               <ul className="list-disc list-inside text-gray-600 mb-4">
                 {p.features.map((f, i) => <li key={i}>{f}</li>)}
               </ul>
-              <div className="flex flex-col sm:flex-row justify-center gap-3">
-                <Link to="/contact" className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Request Demo</Link>
-                <Link to="/contact" className="px-4 py-2 border-2 border-blue-600 text-blue-600 rounded hover:bg-blue-600 hover:text-white transition">Get Pricing</Link>
-              </div>
+             <div className="flex flex-col sm:flex-row justify-end gap-3">
+          <Link to="/contact"  className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Request Demo</Link>
+           </div>
+             
             </Card>
           ))}
         </div>

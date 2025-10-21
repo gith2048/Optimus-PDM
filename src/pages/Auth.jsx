@@ -118,6 +118,18 @@ const Auth = ({ setCurrentUser }) => {
               required
             />
           </div>
+          
+          {isLogin && (
+  <div className="text-right text-sm">
+    <button
+      type="button"
+      onClick={() => navigate("/forgot-password")}
+      className="text-blue-600 hover:underline"
+    >
+      Forgot Password?
+    </button>
+  </div>
+)}
 
           {!isLogin && (
             <div>

@@ -14,10 +14,7 @@ const Dashboard = ({ currentUser }) => {
       labels: ["Machines", "Sensors", "Software", "IoT Devices"],
       values: Array.from({ length: 4 }, () => Math.floor(Math.random() * 50)),
     },
-    contact_requests: [
-      { id: 1, name: "John Doe", email: "john@example.com", company: "ABC Corp", meeting_date: "2025-10-15", message: "Need demo", created_at: "2025-10-10" },
-      { id: 2, name: "Jane Smith", email: "jane@example.com", company: "XYZ Ltd", meeting_date: "2025-10-20", message: "Pricing details", created_at: "2025-10-11" },
-    ],
+   
   });
 
   // Initialize data
@@ -135,34 +132,7 @@ const Dashboard = ({ currentUser }) => {
         ))}
       </div>
 
-      {/* Contact Requests */}
-      <div className="space-y-4">
-        <h2 className="text-xl md:text-2xl font-semibold">Contact Requests</h2>
-        {dashboardData.contact_requests.length ? (
-          <div className="grid gap-4">
-            {dashboardData.contact_requests.map((req) => (
-              <div key={req.id} className="p-4 border rounded-lg shadow flex flex-col md:flex-row md:justify-between gap-4">
-                <div>
-                  <h3 className="font-semibold text-lg">{req.name} ({req.company})</h3>
-                  <p><strong>Email:</strong> {req.email}</p>
-                  <p><strong>Meeting Date:</strong> {req.meeting_date}</p>
-                  <p><strong>Message:</strong> {req.message}</p>
-                  <p className="text-gray-400 text-sm">Created At: {req.created_at}</p>
-                </div>
-                <div className="flex flex-col md:flex-row gap-2 md:items-center">
-                  <button className="btn btn-primary px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700">Contact</button>
-                  <button className="btn btn-outline px-3 py-1 border-2 border-blue-600 text-blue-600 rounded hover:bg-blue-100">Mark as Handled</button>
-                </div>
-              </div>
-            ))}
-          </div>
-        ) : (
-          <div className="text-center p-8 bg-white rounded shadow">
-            <h3 className="text-xl font-semibold mb-2">No Contact Requests Yet</h3>
-            <p>When customers fill out the contact form, their requests will appear here.</p>
-          </div>
-        )}
-      </div>
+  
     </div>
   );
 };
